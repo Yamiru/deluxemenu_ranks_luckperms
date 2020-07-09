@@ -1,0 +1,113 @@
+  rankshop:
+    menu_title: '&nRanks shop'
+    open_command:
+    - rankshop
+    - ranksshop
+    size: 9
+    open_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: deluxemenus.view.rankshop
+          deny_commands:
+          - '[message] &c(!) You are not allowed to open this inventory.'
+    items:
+      '1':
+        material: NAME_TAG
+        amount: 1
+        slot: 1
+        display_name: '&8◆ &a&nBaron Rank&r&8◆'
+        lore:
+        - '&7Click to purchase the &nBaron Rank&r&7.'
+        - '&r'
+        - '&7Perks'
+        - '&7* /ss help  sort chest/inventory &9NEW!'
+        - '&7* Chat prefix and tab color'
+        - '&7* Chat bypass'
+        - '&7* /sun'
+        - '&7* /timevote day/night'
+        - '&r'
+        - '&eCost: &7 1.500.000 &e⛃'
+        left_click_commands:
+        - '[console] eco take %player_name% 1500000'
+        - '[console] lp user %player_name% parent set baron'
+        left_click_requirement:
+          expression: '%vault_eco_balance% > 1500000'
+          deny_commands:
+          - '[message] &c(!) You do not have enough coins for this.'
+      '3':
+        material: NAME_TAG
+        amount: 1
+        slot: 3
+        display_name: '&8◆ &a&nEmperor Rank&r &8◆'
+        lore:
+        - '&7Click to purchase the &nEmperor Rank&r&7.'
+        - '&r'
+        - '&7Perks'
+        - '&7* /ss help  sort chest/inventory &9NEW!'
+        - '&7* Chat prefix and tab color'
+        - '&7* Chat bypass'
+        - '&7* /sun'
+        - '&7* /feed'
+        - '&7* /timevote day/night'
+        - '&r'
+        - '&eCost: &7 2.500.000 &e⛃'
+        left_click_commands:
+        - '[console] eco take %player_name% 2500000'
+        - '[console] lp user %player_name% parent set emperor'
+        left_click_requirement:
+          expression: '%vault_eco_balance% > 2500000'
+          deny_commands:
+          - '[message] &c(!) You do not have enough coins for this.'
+      '5':
+        material: NAME_TAG
+        amount: 1
+        slot: 5
+        display_name: '&8◆ &a&nHighLord Rank&r &8◆'
+        lore:
+        - '&7Click to purchase the &nHighLord Rank&r&7.'
+        - '&r'
+        - '&7Perks'
+        - '&7* /ss help  sort chest/inventory &9NEW!'
+        - '&7* Chat prefix and tab color'
+        - '&7* Chat bypass'
+        - '&7* /sun'
+        - '&7* /feed'
+        - '&7* /timevote day/night'
+        - '&7* /7x homes'
+        - '&r'
+        - '&eCost: &7 3.000.000 &e⛃'
+        left_click_commands:
+        - '[console] eco take %player_name% 3000000'
+        - '[console] lp user %player_name% parent set highlord'
+        left_click_requirement:
+          expression: '%vault_eco_balance% > 3000000'
+          deny_commands:
+          - '[message] &c(!) You do not have enough coins for this.'
+      '7':
+        material: NAME_TAG
+        amount: 1
+        slot: 7
+        display_name: '&8◆ &a&1Over&5Lord Rank&r &8◆'
+        lore:
+        - '&7Click to purchase the &1Over&5Lord Rank&r&7.'
+        - '&r'
+        - '&7Perks'
+        - '&7* /ss help  sort chest/inventory &9NEW!'
+        - '&7* Chat prefix and tab color'
+        - '&7* Chat bypass'
+        - '&7* /sun'
+        - '&7* /feed'
+        - '&7* /heal'
+        - '&7* /timevote day/night'
+        - '&7* color text'
+        - '&7* 7x homes'
+        - '&r'
+        - '&eCost: &7 4.000.000 &e⛃'
+        left_click_commands:
+        - '[console] eco take %player_name% 4000000'
+        - '[console] lp user %player_name% parent set overlord'
+        left_click_requirement:
+          expression: '%vault_eco_balance% > 4000000'
+          deny_commands:
+          - '[message] &c(!) You do not have enough coins for this.'
